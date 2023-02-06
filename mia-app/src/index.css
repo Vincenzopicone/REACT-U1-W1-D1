@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.containerPhotos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardPet {
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: 20px 20px 20px 20px  lightgray;
+  animation: animazione 5s linear ;
+}
+
+@keyframes animazione {
+  0% {
+    translate: -100px;
+  }
+  25% {
+    translate: 0px;
+  }
+  50% {
+    translate: 100px;
+  }
+  75% {
+    translate: 0px;
+  }
+  100% {
+    translate: -100px;
+  }
+
+}
