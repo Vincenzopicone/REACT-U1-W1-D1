@@ -24,13 +24,25 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 5%;
 }
 
 .cardPet {
   border-radius: 30px;
   border: 1px solid black;
   box-shadow: 20px 20px 20px 20px  lightgray;
-  animation: animazione 5s linear ;
+  animation: animazione 3s linear ;
+}
+
+.cardPet:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.cardPet>img {
+  width: 100%;
+  border-radius: 20px;
+  
 }
 
 @keyframes animazione {
